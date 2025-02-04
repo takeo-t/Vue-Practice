@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Counter from './components/Counter.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
+  <!-- <div> -->
+    <!-- <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" /> -->
+  <div>
+    <h1>Pinia Counter Example</h1>
+    <Counter />
+  </div>
 </template>
 
 <style scoped>
