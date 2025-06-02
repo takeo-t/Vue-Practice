@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import Counter from './components/Counter.vue'
+// import Counter from './components/Counter.vue'
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import Counter from './components/Counter.vue'
   <HelloWorld msg="Vite + Vue" /> -->
   <div>
     <h1>Pinia Counter Example</h1>
-    <Counter />
+    <HelloWorld msg="Vite + Vue" />
   </div>
 </template>
 
