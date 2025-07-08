@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 // import Counter from './components/Counter.vue'
+import Drag from './components/Drag.vue';
 import HelloWorld from './components/HelloWorld.vue';
 </script>
 
@@ -17,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue';
   <div>
     <h1>Pinia Counter Example</h1>
     <HelloWorld msg="Vite + Vue" />
+    <Drag />
   </div>
 </template>
 
