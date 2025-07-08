@@ -31,14 +31,25 @@ function getAngleRad(event: MouseEvent): number {
   return Math.atan2(dy, dx)
 }
 
+// ドラッグ開始時の処理
+/**
+ * isDragging を true に設定し、マウスの位置から角度を計算
+ * マウスの位置から中心点までの角度をラジアンで取得し、prevAngleRad に保存
+ * @param event 
+ */
 function startDrag(event: MouseEvent) {
   isDragging.value = true
   prevAngleRad = getAngleRad(event)
 }
 
+/**
+ * 
+ * @param event 
+ */
 function onDrag(event: MouseEvent) {
   if (!isDragging.value) return
 
+  // getAngleRad を使って現在のマウス位置から角度を計算
   const currentAngleRad = getAngleRad(event)
   let deltaRad = currentAngleRad - prevAngleRad
 
@@ -50,6 +61,7 @@ function onDrag(event: MouseEvent) {
   prevAngleRad = currentAngleRad
 }
 
+// ドラッグ終了時の処理
 function stopDrag() {
   isDragging.value = false
 }
