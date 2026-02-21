@@ -43,7 +43,7 @@ function startDrag(event: MouseEvent) {
 }
 
 /**
- * 
+ * ドラッグ中の処理
  * @param event 
  */
 function onDrag(event: MouseEvent) {
@@ -82,6 +82,7 @@ onBeforeUnmount(() => {
   width: 200px;
   height: 200px;
   background-color: lightgreen;
+  border-radius: 10px;
   border: 2px solid #444;
   display: flex;
   align-items: center;
